@@ -20,6 +20,9 @@ dependencies:
   flutter:
     sdk: flutter
   simple_animations: ^1.3.11
+  avatar_glow: ^1.0.0
+  preload_page_view: ^0.1.4
+  extended_image: ^0.6.5
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -34,11 +37,46 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+      - assets/images/avatar.png
+      - assets/images/lucknow.png
+      - assets/images/lucknow_heritage.png
+      - assets/images/laptop.png
+      - assets/images/mobile.png
+
+      - assets/images/artist/i1.jpg
+      - assets/images/artist/i2.jpg
+      - assets/images/artist/i3.jpg
+      - assets/images/artist/i4.jpg
+      - assets/images/artist/i5.jpg
+      - assets/images/pen.png
+      - assets/images/plane_text.png
+      - assets/images/unacademy.png
+      - assets/images/unacademy/1.png
+      - assets/images/unacademy/2.png
+      - assets/images/unacademy/3.png
+      - assets/images/unacademy/4.png
+
+      - assets/images/intro/b2.jpg
+      - assets/images/intro/footer.png
+
+      - assets/images/about/lucknow.jpg
+
+      - assets/images/education/roorkee.jpg
+
+      - assets/images/work/workozy.png
+      - assets/images/work/workozy_track.png
+      - assets/images/work/office.png
+
+      - assets/images/skills/bike.jpg
+      - assets/images/work/oneclick.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

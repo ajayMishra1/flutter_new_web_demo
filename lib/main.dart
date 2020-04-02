@@ -1,24 +1,36 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_web_firebase/HomePage.dart';
 import 'package:simple_animations/simple_animations/controlled_animation.dart';
 import 'package:simple_animations/simple_animations/multi_track_tween.dart';
 import 'dart:html' as html;
 
-void main() => runApp(ParticleApp());
+void main() => runApp(MyApp());
 
-class ParticleApp extends StatelessWidget {
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter web demo by AjaY mishra ....",
-      home: Scaffold(
-        body: ParticleBackgroundPage(),
-        
+      title: 'Something About Mishra AjaY..',
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+        fontFamily: 'Nunito',
+        scaffoldBackgroundColor: Colors.white,
       ),
+      darkTheme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+        fontFamily: 'Nunito',
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
+
 
 class ParticleBackgroundPage extends StatelessWidget {
   @override
