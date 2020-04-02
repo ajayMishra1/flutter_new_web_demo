@@ -33942,7 +33942,7 @@ t.push(Y.UN(!1,H.b([new U.bb(r,!1,!0,r,r,r,!1,[s],r,C.m,r,!1,!1,r,C.t)],u.E),"Th
 t.push(new U.lX("",!1,!0,r,r,r,!1,r,C.a0,C.m,"",!0,!1,r,C.b4))
 return!1}return!0}}
 F.u6.prototype={
-L:function(a){return new S.mK(new M.nH(new F.u7(null),null),"Flutter web demo by AjaY...",null)}}
+L:function(a){return new S.mK(new M.nH(new F.u7(null),null),"Flutter web demo by AjaY mishra ....",null)}}
 F.u7.prototype={
 L:function(a){return T.vE(C.fr,H.b([T.QJ(new F.qk(null)),T.QJ(new F.qM(null))],u.p),C.fk)}}
 F.qk.prototype={
@@ -33957,7 +33957,7 @@ $2:function(a,b){var t=null,s=J.af(b)
 return M.Bz(t,t,t,t,S.B2(t,t,t,t,T.NI(C.pX,H.b([s.h(b,"color1"),s.h(b,"color2")],u.bk),C.pW,t,C.jb),t,C.a_),t,t,t)}}
 F.qM.prototype={
 L:function(a){var t=null
-return M.Bz(t,new T.qX(C.a4,C.o0,C.o1,C.fB,t,C.pJ,t,H.b([L.I2("Hi there! My name is",t,A.fV(t,t,C.un,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),2),L.I2("Mishra ajay",t,A.fV(t,t,C.j,t,t,t,t,t,t,t,t,t,t,C.bG,t,t,!0,t,t,t,t,t,t),3),new T.eN(t,10,t,t),L.I2("I am an iOS Developer. \nI have 3 years or experience in iPhone development. \nI am working on One click IT Consultancy.",!0,A.fV(t,t,C.z,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),1.5),new T.eN(t,20,t,t),new D.uz(new F.Bk(),t,t,t,t,t,C.uo,t,t,t,t,t,t,t,t,t,t,t,L.I2("One Click",t,A.fV(t,t,C.z,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),t),new V.aE(10,10,10,10),t,new S.cm(C.l),C.an,t,!1,t,t,t),new T.eN(20,t,t,t)],u.p),t),t,t,t,t,new V.aE(20,20,20,20),t)}}
+return M.Bz(t,new T.qX(C.a4,C.o0,C.o1,C.fB,t,C.pJ,t,H.b([L.I2("Hi there! My name is",t,A.fV(t,t,C.un,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),2),L.I2("Mishra ajay rajkishor",t,A.fV(t,t,C.j,t,t,t,t,t,t,t,t,t,t,C.bG,t,t,!0,t,t,t,t,t,t),3),new T.eN(t,10,t,t),L.I2("I am an iOS Developer. \nI have 3 years or experience in iPhone development. \nI am working on One click IT Consultancy.",!0,A.fV(t,t,C.z,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),1.5),new T.eN(t,20,t,t),new D.uz(new F.Bk(),t,t,t,t,t,C.uo,t,t,t,t,t,t,t,t,t,t,t,L.I2("One Click",t,A.fV(t,t,C.z,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),t),new V.aE(10,10,10,10),t,new S.cm(C.l),C.an,t,!1,t,t,t),new T.eN(20,t,t,t)],u.p),t),t,t,t,t,new V.aE(20,20,20,20),t)}}
 F.Bk.prototype={
 $0:function(){C.aN.Hc(window,"https://www.oneclickitsolution.com/","Home page")},
 $S:0}
