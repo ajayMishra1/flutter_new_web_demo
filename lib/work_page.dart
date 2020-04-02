@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_firebase/HomePage.dart';
+import 'package:flutter_web_firebase/main.dart';
 
 class WorkPage extends StatelessWidget {
   @override
@@ -9,6 +10,8 @@ class WorkPage extends StatelessWidget {
       flex: 2,
       child: Stack(
         children: <Widget>[
+          Positioned.fill(child: AnimatedBackground()),
+
         Positioned(
             bottom: 0,
             child: Opacity(
@@ -19,6 +22,8 @@ class WorkPage extends StatelessWidget {
               ),
             ),
           ),
+         Positioned.fill(child: Particles(30)),
+
           Container(
             padding: EdgeInsets.all(32),
             child: Column(
@@ -55,7 +60,7 @@ class WorkPage extends StatelessWidget {
                           Text(
                             "Oneclick IT consultancy",
                             style: TextStyle(
-                              color: Colors.black87,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                               fontSize: 28,
                             ),
@@ -68,7 +73,7 @@ class WorkPage extends StatelessWidget {
                       Text(
                         "",
                         style: TextStyle(
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontSize: 14,
                         ),
                         softWrap: true,
@@ -79,7 +84,7 @@ class WorkPage extends StatelessWidget {
                       Text(
                         "I have 2 and half year of experience in One click it. \n Company's environment is very friendly. \n  It is great experience to work in this company. ",
                         style: TextStyle(
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontWeight: FontWeight.w600,
                           fontSize: 16,
                         ),

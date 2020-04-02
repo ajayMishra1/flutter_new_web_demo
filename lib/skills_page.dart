@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_firebase/HomePage.dart';
+import 'package:flutter_web_firebase/main.dart';
 
 class SkillsPage extends StatelessWidget {
   @override
@@ -9,6 +10,8 @@ class SkillsPage extends StatelessWidget {
       flex: 2,
       child: Stack(
         children: <Widget>[
+         Positioned.fill(child: AnimatedBackground()),
+
           Positioned(
             bottom: 0,
             child: Opacity(
@@ -19,10 +22,9 @@ class SkillsPage extends StatelessWidget {
               ),
             ),
           ),
+           Positioned.fill(child: Particles(20)),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 32),
-            child: SingleChildScrollView(
-              padding: EdgeInsets.symmetric(vertical: 32),
+             padding: EdgeInsets.all(32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -46,7 +48,7 @@ class SkillsPage extends StatelessWidget {
                         Text(
                           "iOS Platform",
                           style: TextStyle(
-                            color: Colors.black87,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
@@ -59,7 +61,7 @@ class SkillsPage extends StatelessWidget {
                           "\n- Worked on BLE Projects"
                           "\n- Knowledge of ARkit and Swift UI.",
                           style: TextStyle(
-                            color: Colors.black54,
+                            color: Colors.white,
                             fontSize: 16,
                           ),
                           softWrap: true,
@@ -78,7 +80,7 @@ class SkillsPage extends StatelessWidget {
                         Text(
                           "Flutter Cross Platform",
                           style: TextStyle(
-                            color: Colors.black87,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
@@ -90,7 +92,7 @@ class SkillsPage extends StatelessWidget {
                           "- Worked on trading app"
                           "\n- Have knowledge of Flutter desktop apps and web apps.",
                           style: TextStyle(
-                            color: Colors.black54,
+                            color: Colors.white,
                             fontSize: 16,
                           ),
                           softWrap: true,
@@ -103,8 +105,7 @@ class SkillsPage extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          ),
+           ),
         ],
       ),
     );
@@ -123,3 +124,5 @@ class SkillsPage extends StatelessWidget {
     );
   }
 }
+
+

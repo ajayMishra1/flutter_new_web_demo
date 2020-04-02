@@ -22,6 +22,8 @@ class IntroPage extends StatelessWidget {
               ),
             ),
           ),
+           Positioned.fill(child: Particles(30)),
+
           Container(
             padding: EdgeInsets.all(32),
             child: Column(
@@ -42,7 +44,7 @@ class IntroPage extends StatelessWidget {
                 Text(
                   "MISHRA AJAY",
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
                   ),
@@ -53,7 +55,7 @@ class IntroPage extends StatelessWidget {
                 Text(
                   "iOS Developer / Mac OS Developer / Flutter Developer",
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.white,
                     fontSize: 16,
                   ),
                   softWrap: true,
