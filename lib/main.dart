@@ -11,7 +11,7 @@ class ParticleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter web demo by AjaY...",
+      title: "Flutter web demo by AjaY mishra ....",
       home: Scaffold(
         body: ParticleBackgroundPage(),
         
@@ -79,7 +79,7 @@ class CenteredText extends StatelessWidget {
         style: TextStyle(color: Colors.orange),
       ),
       Text(
-        "Mishra ajay",
+        "Mishra ajay rajkishor",
         textScaleFactor: 3,
         style: TextStyle(
           color: Colors.white,
