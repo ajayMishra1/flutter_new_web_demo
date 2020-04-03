@@ -1,0 +1,39 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - path_provider (0.0.1)
+  - path_provider_macos (0.0.1):
+    - FlutterMacOS
+  - window_size (0.0.2):
+    - FlutterMacOS
+  - window_utils (0.0.3):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral/.symlinks/flutter/darwin-x64`)
+  - path_provider (from `Flutter/ephemeral/.symlinks/plugins/path_provider/macos`)
+  - path_provider_macos (from `Flutter/ephemeral/.symlinks/plugins/path_provider_macos/macos`)
+  - window_size (from `Flutter/ephemeral/.symlinks/plugins/window_size/macos`)
+  - window_utils (from `Flutter/ephemeral/.symlinks/plugins/window_utils/macos`)
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral/.symlinks/flutter/darwin-x64
+  path_provider:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider/macos
+  path_provider_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_macos/macos
+  window_size:
+    :path: Flutter/ephemeral/.symlinks/plugins/window_size/macos
+  window_utils:
+    :path: Flutter/ephemeral/.symlinks/plugins/window_utils/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: 15bea8a44d2fa024068daa0140371c020b4b6ff9
+  path_provider: e0848572d1d38b9a7dd099e79cf83f5b7e2cde9f
+  path_provider_macos: adb94ae6c253c45ef2aac146fbf1f4504d74b0f8
+  window_size: 339dafa0b27a95a62a843042038fa6c3c48de195
+  window_utils: 30d6f8e67c0732ebd021c020cb2634e1da2d8bc6
+
+PODFILE CHECKSUM: d8ba9b3e9e93c62c74a660b46c6fcb09f03991a7
+
+COCOAPODS: 1.9.0

@@ -1,15 +1,47 @@
+import 'dart:async';
+import 'dart:io';
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_web_firebase/HomePage.dart';
 import 'package:simple_animations/simple_animations/animation_progress.dart';
 import 'package:simple_animations/simple_animations/controlled_animation.dart';
 import 'package:simple_animations/simple_animations/multi_track_tween.dart';
-import 'dart:html' as html;
 
 import 'package:simple_animations/simple_animations/rendering.dart';
+import 'package:window_size/window_size.dart' as window_size;
+import 'dart:math' as math;
 
-void main() => runApp(MyApp());
+import 'package:window_utils/window_utils.dart';
+
+void main() {
+    WidgetsFlutterBinding.ensureInitialized();
+
+  window_size.getWindowInfo().then((window) {
+    if (window.screen != null) {
+   
+
+      final screenFrame = window.screen.visibleFrame;
+      final width = math.max((screenFrame.width / 2).roundToDouble(), 800.0);
+      final height = math.max((screenFrame.height / 2).roundToDouble(), 600.0);
+      final left = ((screenFrame.width - width) / 2).roundToDouble();
+      final top = ((screenFrame.height - height) / 3).roundToDouble();
+      final frame = Rect.fromLTWH(left, top, width, height);
+      window_size.setWindowFrame(frame);
+      window_size
+          .setWindowTitle('Flutter Demo ${Platform.operatingSystem}');
+
+      if (Platform.isMacOS) {
+        window_size.setWindowMinSize(Size(800, 600));
+        window_size.setWindowMaxSize(Size(800, 600));
+      }
+    }
+  });
+
+
+  runApp(MyApp());
+}
 
 
 class MyApp extends StatelessWidget {
@@ -116,16 +148,6 @@ class CenteredText extends StatelessWidget {
         height: 20,
       ),
     
-          RaisedButton(
-            shape: StadiumBorder(),
-            child: Text("One Click",  style: TextStyle(color: Colors.white70)),
-            color: Colors.red,
-            onPressed: () {
-              html.window
-                  .open("https://www.oneclickitsolution.com/", "Home page");
-            },
-            padding: EdgeInsets.all(10),
-          ),
           SizedBox(
             width: 20,
           ),
@@ -149,7 +171,7 @@ class Particles extends StatefulWidget {
 
 class _ParticlesState extends State<Particles> {
   final Random random = Random();
-
+  Timer normalVirtualTimer;
   final List<ParticleModel> particles = [];
 
   @override
@@ -157,7 +179,17 @@ class _ParticlesState extends State<Particles> {
     List.generate(widget.numberOfParticles, (index) {
       particles.add(ParticleModel(random));
     });
+
+      runTimer();
     super.initState();
+  }
+
+  runTimer(){
+     normalVirtualTimer =
+        Timer.periodic(new Duration(seconds: 15), (timer) async {
+          print("ajay mishra");
+
+        });
   }
 
   @override
