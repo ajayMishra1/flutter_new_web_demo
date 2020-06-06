@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_firebase/HomePage.dart';
 import 'package:flutter_web_firebase/main.dart';
 
-class WorkPage extends StatelessWidget {
+class ProfessionalDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final body = Flexible(
@@ -17,27 +17,34 @@ class WorkPage extends StatelessWidget {
             child: Opacity(
               opacity: 0.6,
               child: Image.asset(
-                'assets/images/intro/footer.png',
+                'assets/images/footer.png',
                 fit: BoxFit.fitWidth,
               ),
             ),
           ),
-         Positioned.fill(child: Particles(30)),
+       //  Positioned.fill(child: Particles(30)),
 
           Container(
             padding: EdgeInsets.all(32),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: ListView(
               children: <Widget>[
-                Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+                      Center(child:  Text(
+                    "Professional Details",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 50,
+                    ),
+                    softWrap: true,
+                  ),),
+              
+                  SizedBox(height: 30),
                       Text(
-                        "iOS Developer AT",
+                        "Senior iOS Developer AT",
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
@@ -51,7 +58,7 @@ class WorkPage extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           Image.asset(
-                            'assets/images/work/oneclick.png',
+                            'assets/images/oneclick.png',
                             height: 40,
                           ),
                           SizedBox(
@@ -79,10 +86,10 @@ class WorkPage extends StatelessWidget {
                         softWrap: true,
                       ),
                       SizedBox(
-                        height: 24,
+                        height: 10,
                       ),
                       Text(
-                        "I have 2 and half year of experience in One click it. \n Company's environment is very friendly. \n  It is great experience to work in this company. ",
+                        "I have 3 years of experience in One click it consultancy. ",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -92,12 +99,12 @@ class WorkPage extends StatelessWidget {
                       ),
                     ],
                   ),
+               ]
                 ),
-                
-              ],
-            ),
-          ),
-        ],
+          
+          
+                      ),
+         ],
       ),
     );
   

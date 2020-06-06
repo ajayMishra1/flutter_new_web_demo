@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_firebase/personalDetails.dart';
+import 'package:flutter_web_firebase/professionalDetails.dart';
+import 'package:flutter_web_firebase/professionalSummary.dart';
+import 'package:flutter_web_firebase/projects.dart';
 import './drawer.dart';
 
 import './intro_page.dart';
-import './skills_page.dart';
-import './work_page.dart';
-
+  
 
 class HomePage extends StatelessWidget {
   final _controller = PageController();
@@ -23,8 +25,10 @@ class HomePage extends StatelessWidget {
       scrollDirection: Axis.vertical,
       children: <Widget>[
         IntroPage(),
-        WorkPage(),
-        SkillsPage(),
+        ProfessionalSummary(),
+        ProfessionalDetails(),
+        Projects(),
+        PersonalDetails(),
       ],
     );
     return WebLayout(
@@ -32,7 +36,7 @@ class HomePage extends StatelessWidget {
         body: body,
         drawer: drawer,
         appBar: AppBar(
-          title: Text("ABOUT ME"),
+          title: Text("RESUME"),
           elevation: 1,
           backgroundColor: Color(0xFF34495e),
         ),

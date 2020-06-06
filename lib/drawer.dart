@@ -8,9 +8,11 @@ class LeftDrawer extends StatelessWidget {
   LeftDrawer(this.onItemTap);
 
   final list = <String>[
-    "INTRO",
-    "WORK",
-    "SKILLS",
+    "INTRODUCTION",
+    "PROFESSIONAL SUMMARY",
+    "PROFESSIONAL DETAILS",
+    "PROJECTS",
+    "PERSONAL DETAILS",
   ];
 
   @override
@@ -41,7 +43,7 @@ class LeftDrawer extends StatelessWidget {
               ),
             ),
             Text(
-              "Mishra AjaY..",
+              "Ajay Mishra",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18,
