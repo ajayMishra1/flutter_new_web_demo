@@ -46,7 +46,7 @@ class SkillsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          "iOS Platform",
+                          "iOS Platformfffhjdjdhjdjjd",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
